@@ -10,7 +10,7 @@ main {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'specimen', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -64,7 +64,8 @@ header .containera:hover {
     color: white; /* Texte en blanc */
     margin: 0; /* Supprime les marges par défaut */
     flex: 1;
-    padding-left: 5rem;
+    padding-left: 11rem;
+    color: rgba(255, 255, 255, 0.5);;
 }
 
 /* Navigation */
@@ -72,8 +73,41 @@ nav {
     display: flex; /* Active Flexbox */
     justify-content: center; /* Centre les liens horizontalement */
     gap: 1rem; /* Espace entre les liens */
-    padding: 0 10rem;
+    padding: 0 3rem;
+    font-weight: bold;
+    
 }
+/* Style par défaut (grands écrans) */
+
+
+nav a {
+    color: white;
+    text-decoration: none; /* Supprime le soulignement */
+    
+}
+
+/* Responsivité pour écrans moyens */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap; /* Permet aux liens de passer à la ligne si nécessaire */
+        justify-content: center; /* Centre les liens même en plusieurs lignes */
+        padding: 0 2rem; /* Réduit les marges */
+    }
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Empile les liens verticalement */
+        align-items: center; /* Centre les liens */
+        gap: 1rem; /* Réduit l'espace entre les liens */
+    }
+
+    nav a {
+        font-size: 1rem; /* Réduit légèrement la taille de la police */
+    }
+}
+
 
 nav a {
     color: white;
@@ -145,6 +179,33 @@ nav a:hover {
     padding: 2rem 4rem; /* Ajoute de l'espace entre les bords de la galerie et les images */
     background: #f5f5f5; /* Couleur de fond pour la section */
 }
+/* Style par défaut pour les grands écrans */
+
+
+/* Style pour les écrans moyens */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; /* Empile les cartes verticalement */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Adapte la largeur pour occuper presque toute l'écran */
+    }
+}
+
+/* Style pour les petits écrans */
+@media (max-width: 480px) {
+    .gallery {
+        padding: 1rem;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto; /* Ajuste la hauteur automatiquement */
+    }
+}
+
 
 /* Style pour chaque carte */
 .card {
@@ -188,8 +249,36 @@ footer {
     padding: 2rem 3rem;
 }
 
+/* Responsivité pour écrans moyens */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Empile le contenu verticalement */
+        align-items: center; /* Centre le contenu */
+        text-align: center; /* Aligne le texte au centre */
+        gap: 1.5rem; /* Ajoute de l'espace entre chaque section */
+    }
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 480px) {
+    footer {
+        padding: 1rem; /* Réduit les marges internes */
+    }
+
+    footer nav {
+        flex-direction: column; /* Empile les liens verticalement */
+        gap: 1rem;
+    }
+
+    footer nav a {
+        font-size: 0.9rem; /* Réduit légèrement la taille des liens */
+    }
+}
+
+
 footer p {
     margin: 0; /* Supprime la marge pour un meilleur alignement */
+    color: rgba(255, 255, 255, 0.5);
 }
 
 footer nav {
