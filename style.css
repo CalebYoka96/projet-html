@@ -1,0 +1,209 @@
+html, body {
+    height: 100%; /* Assure que le body prend toute la hauteur de la page */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organise les éléments en colonne */
+}
+
+main {
+    flex: 1; /* Permet au contenu principal de s'étendre pour remplir l'espace disponible */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Sépare les éléments (texte à gauche, liens à droite) */
+    align-items: center; /* Centre verticalement les éléments */
+    background: #333;
+    color: white;
+    padding: 0 2rem ; /* Ajoute de l'espace interne autour du header */
+}
+
+header .container { /* Remplacez .container par le nom de votre div si différent */
+    margin: 0; /* Supprime toute marge autour du conteneur */
+    padding: 0.5rem 0; /* Supprime le padding */
+    border-top: 5px solid white; /* Ajoute la ligne en haut du div */
+    background: #333; /* Optionnel : ajoute un fond au conteneur */
+}
+
+header .container h1 {
+    margin: 0; /* Supprime les marges par défaut du h1 */
+    padding: 1rem; /* Ajoute de l'espace interne autour du texte */
+    color: white; /* Assure que le texte reste visible */
+}
+header .container a {
+    text-decoration: none; /* Supprime le soulignement du lien */
+}
+
+header .containera:hover {
+    color: #f39c12; /* Ajoute un effet survol pour plus d'interactivité */
+}
+
+
+
+/* Conteneur pour la section navigation (avec numéro et adresse) */
+.nav-section {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre le texte et les liens */
+    gap: 0.5rem; /* Espace entre les infos de contact et les liens */
+    padding: 1rem 0; /* Ajoute un espacement autour */
+    justify-content: space-between;
+}
+
+/* Style pour les infos de contact */
+.contact-info {
+    font-size: 0.9rem; /* Réduit légèrement la taille du texte */
+    color: white; /* Texte en blanc */
+    margin: 0; /* Supprime les marges par défaut */
+    flex: 1;
+    padding-left: 5rem;
+}
+
+/* Navigation */
+nav {
+    display: flex; /* Active Flexbox */
+    justify-content: center; /* Centre les liens horizontalement */
+    gap: 1rem; /* Espace entre les liens */
+    padding: 0 10rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+nav a:hover {
+    color: #f39c12; /* Effet survol */
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.intro {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    text-align: center; /* Centre le texte dans chaque élément */
+    padding: 2rem; /* Ajoute de l'espace interne */
+    background-color: #333; /* Fond sombre pour la section */
+}
+
+.intro-content {
+    margin-bottom: 1.5rem; /* Ajoute un espace entre le contenu et le bouton */
+}
+
+.intro-content h2{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5); /* Blanc avec une opacité de 70% */
+    ;
+}
+
+
+.intro-content p {
+    margin: 0; /* Supprime les marges par défaut */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Style pour le bouton */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Taille du bouton */
+    background: #333; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    border: 2px solid white; /* Ajoute une bordure blanche */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Ajoute une transition douce */
+}
+
+.btn:hover {
+    background: white; /* Change le fond au survol */
+    color: #333; /* Change la couleur du texte au survol */
+}
+/* Section contenant les images */
+/* Section contenant les images */
+.gallery {
+    display: flex; /* Aligne les éléments horizontalement */
+    justify-content: center; /* Centre les éléments dans la page */
+    gap: 2rem; /* Ajoute de l'espace uniforme entre les cartes */
+    padding: 2rem 4rem; /* Ajoute de l'espace entre les bords de la galerie et les images */
+    background: #f5f5f5; /* Couleur de fond pour la section */
+}
+
+/* Style pour chaque carte */
+.card {
+    text-align: left; /* Garde les titres et les descriptions alignés à gauche */
+    width: 300px; /* Augmente la largeur de chaque carte */
+}
+
+/* Style pour les images */
+.card img {
+    width: 300px; /* Largeur fixe pour toutes les images */
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Ajuste l'image pour remplir le cadre tout en maintenant les proportions */
+    border-radius: 5px; /* Coins arrondis pour un look moderne */
+    
+}
+
+
+
+.card h2 {
+    text-align: left; /* Aligne le titre à gauche */
+    font-size: 1.2rem; /* Taille légèrement augmentée */
+    margin: 0.5rem 0; /* Ajoute un espace autour du titre */
+    color: #333; /* Couleur du texte */
+}
+
+.card p {
+    text-align: left; /* Aligne le texte à gauche */
+    font-size: 0.9rem; /* Taille réduite pour une description subtile */
+   
+    color: #555; /* Couleur plus douce pour le paragraphe */
+}
+
+
+
+footer {
+    background: #333;
+    color: white;
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Place le texte à gauche et les liens à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 2rem 3rem;
+}
+
+footer p {
+    margin: 0; /* Supprime la marge pour un meilleur alignement */
+}
+
+footer nav {
+    display: flex;
+    gap: 1rem; /* Ajoute un espace entre les liens */
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer nav a:hover {
+    color: #f39c12; /* Effet au survol */
+}
+
