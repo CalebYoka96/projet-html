@@ -21,7 +21,7 @@ header {
     display: flex; /* Active Flexbox */
     justify-content: space-between; /* Sépare les éléments (texte à gauche, liens à droite) */
     align-items: center; /* Centre verticalement les éléments */
-    background: #333;
+    background-color: rgb(79, 5, 79);
     color: white;
     padding: 0 2rem ; /* Ajoute de l'espace interne autour du header */
 }
@@ -30,7 +30,7 @@ header .container { /* Remplacez .container par le nom de votre div si différen
     margin: 0; /* Supprime toute marge autour du conteneur */
     padding: 0.5rem 0; /* Supprime le padding */
     border-top: 5px solid white; /* Ajoute la ligne en haut du div */
-    background: #333; /* Optionnel : ajoute un fond au conteneur */
+    background: rgb(79, 5, 79); /* Optionnel : ajoute un fond au conteneur */
 }
 
 header .container h1 {
@@ -134,7 +134,7 @@ nav a:hover {
     justify-content: center; /* Centre les éléments verticalement */
     text-align: center; /* Centre le texte dans chaque élément */
     padding: 2rem; /* Ajoute de l'espace interne */
-    background-color: #333; /* Fond sombre pour la section */
+    background-color:rgb(79, 5, 79); /* Fond sombre pour la section */
 }
 
 .intro-content {
@@ -158,7 +158,7 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem; /* Taille du bouton */
-    background: #333; /* Couleur de fond du bouton */
+    background: rgb(79, 5, 79); /* Couleur de fond du bouton */
     color: white; /* Couleur du texte */
     text-decoration: none; /* Supprime le soulignement */
     border: 2px solid white; /* Ajoute une bordure blanche */
@@ -241,7 +241,7 @@ nav a:hover {
 
 
 footer {
-    background: #333;
+    background:rgb(79, 5, 79);
     color: white;
     display: flex; /* Active Flexbox */
     justify-content: space-between; /* Place le texte à gauche et les liens à droite */
